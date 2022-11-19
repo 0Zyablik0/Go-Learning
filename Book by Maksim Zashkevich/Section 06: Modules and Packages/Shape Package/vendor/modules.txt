@@ -1,0 +1,3 @@
+# github/0Zyablik0/go/shape v1.0.0 => ./shape
+## explicit; go 1.19
+github/0Zyablik0/go/shape

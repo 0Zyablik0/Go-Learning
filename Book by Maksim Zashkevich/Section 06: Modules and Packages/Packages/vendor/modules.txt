@@ -1,0 +1,3 @@
+# github.com/0Zyablik0/storage v0.0.0 => ../Packages/storage
+## explicit; go 1.19
+github.com/0Zyablik0/storage
