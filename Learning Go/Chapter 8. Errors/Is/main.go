@@ -1,0 +1,26 @@
+package main
+
+import (
+	"errors"
+	"fmt"
+	"os"
+)
+
+func FileChecker(name string) error {
+	f, err := os.Open(name)
+	if err != nil {
+		return fmt.Errorf("in FileChecker: %w", err)
+	}
+	f.Close()
+	return nil
+}
+
+func main() {
+	err := FileChecker("not-exist.txt")
+	if err != nil {
+		if errors.Is(err, os.ErrNotExist) {
+			fmt.Println("That file does not exist")
+		}
+
+	}
+}
